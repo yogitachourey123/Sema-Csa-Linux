@@ -5,9 +5,9 @@ function InstallPkg() {
    then echo "The $package_name package is already installed."
  else
 # Update package lists
-   sudo apt update
+   apt update
  #Install the provided package
-   sudo apt install "$packageName"
+   apt install $packageName
  fi
 }
 InstallPkg "$1"
