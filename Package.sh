@@ -5,7 +5,7 @@ if [ dpkg -s "$packageName" >/dev/null 2>&1 && ]; then
     echo "$packageName is already installed."
 else
 #Install the provided package
-  sudo apt-get install $packageName -
+  sudo apt-get install $packageName -y
 fi
 }
 InstallPkg "$1"
